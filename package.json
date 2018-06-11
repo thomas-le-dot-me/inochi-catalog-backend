@@ -1,0 +1,27 @@
+{
+  "name": "real-world-hapijs-mongodb-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-le-dot-me/real-world-hapijs-mongodb-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas-le-dot-me/real-world-hapijs-mongodb-graphql/issues"
+  },
+  "homepage": "https://github.com/thomas-le-dot-me/real-world-hapijs-mongodb-graphql#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "hapi": "^17.5.1",
+    "mongoose": "^5.1.4",
+    "nodemon": "^1.17.5"
+  }
+}
