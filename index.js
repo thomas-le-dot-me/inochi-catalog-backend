@@ -1,8 +1,7 @@
 const config = require('./config/server/server.config');
 const mongoosedb = require('./config/database/database.config');
 const hapi = require('hapi');
-const Contact = require('./models/contact.model');
-const ContactRoutes = require('./routes/contact.routes');
+const ItemRoutes = require('./routes/item.routes');
 
 const server = hapi.server({
     port : config.port,
@@ -14,7 +13,7 @@ const init = async () => {
     await mongoosedb.connect();
     await server.start();
     
-    server.route(ContactRoutes);
+    server.route(ItemRoutes);
     console.log('Server is running at : ' + server.info.uri);
 
 
@@ -22,6 +21,3 @@ const init = async () => {
 
 init();
 
-// UNDERSCORE_FOR_CONSTANTS
-// camelForDeclarations
-// Capitalforconstructors

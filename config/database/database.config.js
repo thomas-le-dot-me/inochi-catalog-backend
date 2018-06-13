@@ -7,7 +7,7 @@ module.exports = {
     connect() {
         mongoose.connect(database_host);
         mongoose.connection.once('open', () => {
-            console.log('Connected');
+            console.log('Connected to database!');
         });
     }
 }
